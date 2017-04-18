@@ -8,7 +8,7 @@ setup(
     license='GPLv2',
 
     author='inokappa',
-    author_email='inokara@gmail.com',
+    author_email='xxxxxxxxxxxxxxxxx',
 
     packages=find_packages(
         exclude=['tests']
