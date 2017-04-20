@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='oreno-pj2',
+    name='my_ec2',
     version='0.0.1',
 
     description="Oreno Sample Project",
@@ -26,7 +26,7 @@ setup(
 
     entry_points={
         'console_scripts': [
-            'ec2 = ec2:main'
+            'my_ec2 = my_ec2:main'
         ]
     },
 )

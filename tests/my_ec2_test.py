@@ -3,7 +3,7 @@ import os
 import StringIO
 import unittest
 from moto import mock_ec2
-from ec2 import get_client, list_ec2_instances, main
+from my_ec2 import get_client, list_ec2_instances, main
 
 class Ec2TestCase(unittest.TestCase):
 
@@ -16,7 +16,7 @@ class Ec2TestCase(unittest.TestCase):
     @mock_ec2
     def __moto_setup(self):
         """
-        Setup.
+        Run Instance
         """
         ec2 = get_client()
         reservation = ec2.run_instances(ImageId='ami-f00ba4', MinCount=1, MaxCount=1)

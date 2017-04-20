@@ -9,7 +9,7 @@ def get_client():
 
 def list_ec2_instances():
     """
-    List s3 bucket names
+    List EC2 InstanceId
     """
     ec2 = get_client()
 
@@ -27,5 +27,5 @@ def main():
     for instance in list_ec2_instances():
         print instance
 
-# if __name__ == '__main__':
-#     main()
+if __name__ == '__main__':
+    main()
